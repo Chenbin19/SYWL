@@ -1,0 +1,36 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/index/index",
+    
+    "pages/my/my"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "抽奖助手Plus",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "iconPath": "/image/home.png",
+        "selectedIconPath": "/image/home.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "/image/gift.png",
+        "selectedIconPath": "/image/gift.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "电影",
+        "iconPath": "/image/my.png",
+        "selectedIconPath": "/image/my.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

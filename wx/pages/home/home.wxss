@@ -1,0 +1,29 @@
+.one{
+      width: 180rpx;
+      height: 180rpx;
+      border-radius: 50%;
+      background-color: red;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .two{
+      width: 170rpx;
+      height: 170rpx;
+      border-radius: 50%;
+      background-color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .three{
+      width: 160rpx;
+      height: 160rpx;
+      border-radius: 50%;
+      background-color: red;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 26rpx;
+    }

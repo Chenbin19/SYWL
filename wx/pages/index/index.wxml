@@ -1,0 +1,60 @@
+<view class="header">
+  <view class="img">
+    <!-- <image></image> -->
+  </view>
+  <text class="user">{{user}}</text>
+  <view class="header1">
+    <view class="nav">
+      <text class="nav1">{{number.number1}}</text>
+      <text class="nav2">{{title.title1}}</text>
+    </view>
+    <view class="divider"></view>
+    <view class="nav">
+      <text class="nav1">{{number.number2}}</text>
+      <text class="nav2">{{title.title2}}</text>
+    </view>
+    <view class="divider"></view>
+    <view class="nav">
+      <text class="nav1">{{number.number3}}</text>
+      <text class="nav2">{{title.title3}}</text>
+    </view>
+  </view>
+</view>
+
+<view class="middle">
+  <view class="title">
+    <view class="title1">
+      <image class="img1" src="{{img.img1}}"></image>
+      <text>{{txt.txt1}}</text>
+    </view>
+    <image class="img2" src="{{img.img0}}"></image>
+  </view>
+  <view class="title">
+    <view class="title1">
+      <image class="img1" src="{{img.img2}}"></image>
+      <text>{{txt.txt2}}</text>
+    </view>
+    <image class="img2" src="{{img.img0}}"></image>
+  </view>
+  <view class="title">
+    <view class="title1">
+      <image class="img1" src="{{img.img3}}"></image>
+      <text>{{txt.txt3}}</text>
+    </view>
+    <image class="img2" src="{{img.img0}}"></image>
+  </view>
+  <view class="title">
+    <view class="title1">
+      <image class="img1" src="{{img.img4}}"></image>
+      <text>{{txt.txt4}}</text>
+    </view>
+    <image class="img2" src="{{img.img0}}"></image>
+  </view>
+    <view class="title">
+    <view class="title1">
+      <image class="img1" src="{{img.img5}}"></image>
+      <text>{{txt.txt5}}</text>
+    </view>
+    <image class="img2" src="{{img.img0}}"></image>
+  </view>
+</view>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>上传页面</title>
+  <link rel="stylesheet" href="../css/upload.css">
+</head>
+
+<body>
+  <div id="upload">
+    <!-- 顶部 -->
+    <div class="header">
+      <a href="./video.html#video"><img class="header1" src="../img/icon/25.png"></a>
+      <a class="header2" href="javascript:;">发表</a>
+    </div>
+
+    <!-- 视频 -->
+    <div id="content">
+      <video loop preload="metadata" id="v1">
+        <source src="../img/sort/x.mp4">
+        <source src="x.webm">
+        <source src="x.ogg">
+      </video>
+      <img id="ctrl" src="../img/icon/21.png">
+    </div>
+
+    <!-- 输入框 -->
+    <input type="text" placeholder="说点什么呢...">
+  </div>
+
+  <script>
+    (function () {
+      let content = document.getElementById("content");
+      let v1 = document.getElementById("v1");
+      let ctrl = document.getElementById("ctrl");
+      content.onclick = function (e) {
+        e.preventDefault();
+        if (v1.paused) {
+          v1.play();
+          ctrl.style.display = "none";
+        } else {
+          v1.pause();
+          ctrl.style.display = "block";
+        }
+      }
+      window.onload = function (e) {
+        v1.play();
+        ctrl.style.display = "none";
+      }
+    })()
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>个人中心</title>
+    <link rel="stylesheet" href="../css/personal.css">
+</head>
+
+<body>
+    <div id="personal">
+        <!-- 顶部 -->
+        <div class="hand">
+            <p>个人中心</p>
+            <a href="javascript:;" id="over" style="color:#999">退出登录</a>
+        </div>
+        <!-- 用户 -->
+        <div class="user">
+            <div class="user1">
+                <img class="image1" src="../img/sort/user.png">
+                <span class="userName">用户</span></div>
+            <img class="image2" src="../img/icon/9.png">
+        </div>
+        <!-- 播放记录 -->
+        <a href="./record.html#record">
+            <div class="tab1">
+                <div class="user1">
+                    <img class="icon1" src="../img/icon/7.png">
+                    <span>电影播放记录</span>
+                </div>
+                <img class="icon2" src="../img/icon/9.png">
+            </div>
+        </a>
+        <div style="background: #fff;">
+            <div class="slide-box">
+                <a class="slide-item" href="javascript:;">
+                    <div class="Play_time">
+                        <img class="boxImage" src="../img/sort/sort1.png">
+                        <p>2019-07-31</p>
+                    </div>
+                    <p class="txt">陈情令</p>
+                    <p class="txt">第8集</p>
+                </a>
+                <a class="slide-item" href="javascript:;">
+                    <div class="Play_time">
+                        <img class="boxImage" src="../img/sort/sort1.png">
+                        <p>2019-07-31</p>
+                    </div>
+                    <p class="txt">陈情令</p>
+                    <p class="txt">第8集</p>
+                </a>
+                <a class="slide-item" href="javascript:;">
+                    <div class="Play_time">
+                        <img class="boxImage" src="../img/sort/sort1.png">
+                        <p>2019-07-31</p>
+                    </div>
+                    <p class="txt">陈情令</p>
+                    <p class="txt">第8集</p>
+                </a>
+                <a class="slide-item" href="javascript:;">
+                    <div class="Play_time">
+                        <img class="boxImage" src="../img/sort/sort1.png">
+                        <p>2019-07-31</p>
+                    </div>
+                    <p class="txt">陈情令</p>
+                    <p class="txt">第8集</p>
+                </a>
+                <a class="slide-item" href="javascript:;">
+                    <div class="Play_time">
+                        <img class="boxImage" src="../img/sort/sort1.png">
+                        <p>2019-07-31</p>
+                    </div>
+                    <p class="txt">陈情令</p>
+                    <p class="txt">第8集</p>
+                </a>
+                <a class="slide-item" href="javascript:;">
+                    <div class="Play_time">
+                        <img class="boxImage" src="../img/sort/sort1.png">
+                        <p>2019-07-31</p>
+                    </div>
+                    <p class="txt">陈情令</p>
+                    <p class="txt">第8集</p>
+                </a>
+                <a class="slide-item" href="javascript:;">
+                    <div class="Play_time">
+                        <img class="boxImage" src="../img/sort/sort1.png">
+                        <p>2019-07-31</p>
+                    </div>
+                    <p class="txt">陈情令</p>
+                    <p class="txt">第8集</p>
+                </a>
+            </div>
+        </div>
+        <!-- 短视频作品 -->
+        <a href="./works.html#works">
+            <div class="tab1">
+                <div class="user1">
+                    <img class="icon3" src="../img/icon/8.png">
+                    <span>短视频作品</span>
+                </div>
+                <img class="icon2" src="../img/icon/9.png">
+            </div>
+        </a>
+        <!-- 退出登录弹窗 -->
+        <div id="bg">
+            <div id="hint">
+                <p>确定退出登录吗？</p>
+                <div id="hint1" style="background: #fff;">
+                    <span id="hint2">取消</span>
+                    <div></div>
+                    <a href="./home.html#home"><span id="hint3">确定退出</span></a>
+                </div>
+            </div>
+        </div>
+        <!-- 底部导航栏 -->
+        <div class="tabbar" style="background:#fff;">
+            <a href="./edition.html#edition">
+                <img src="../img/tabbar/4.png">
+                <span>首页</span>
+            </a>
+            <a href="./video.html#video">
+                <img src="../img/tabbar/5.png">
+                <span>短视频</span>
+            </a>
+            <a href="./personal.html#personal">
+                <img src="../img/tabbar/3.png">
+                <span style="color:#FEA12A">我的</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        (function () {
+            let over = document.getElementById("over");
+            let bg = document.getElementById("bg");
+            let hint = document.getElementById("hint");
+            let hint1 = document.getElementById("hint1");
+            let hint2 = document.getElementById("hint2");
+            let hint3 = document.getElementById("hint3");
+            over.onclick = function () {
+                bg.style.display = "block";
+                hint.style.display = "block"
+            }
+            hint2.onclick = function () {
+                bg.style.display = "none";
+                hint.style.display = "none";
+            }
+            hint3.onclick = function () {
+                window.location.href = "/public/logon.html";
+            }
+        })()
+    </script>
+</body>
+
+</html>

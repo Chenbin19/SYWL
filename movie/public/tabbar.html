@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>tabbar</title>
+  <style>
+    #tabbar {
+      position: fixed;
+      z-index: 20;
+      width: 100%;
+      height: 3rem;
+      left: 0;
+      bottom: 0;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      background: #ffffff
+    }
+
+    #tabbar div {
+      margin-top: .3rem;
+      height: 2.5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      text-decoration: none
+    }
+
+    #tabbar img {
+      width: 1.28rem;
+      height: 1.28rem
+    }
+
+    #tabbar span {
+      width: 100%;
+      font-size: .8rem;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="tabbar">
+    <div>
+      <img id="Img1" src="../img/tabbar/1.png">
+      <span id="txt1" style="color:#FCB927">首页</span>
+    </div>
+    <div>
+      <img id="Img2" src="../img/tabbar/5.png">
+      <span id="txt2" style="color: #9F9F9F;">短视频</span>
+    </div>
+    <div>
+      <img id="Img3" src="../img/tabbar/6.png">
+      <span id="txt3" style="color: #9F9F9F;">我的</span>
+    </div>
+  </div>
+</body>
+<script>
+  (function () {
+    let Img1 = document.getElementById("Img1")
+    let Img2 = document.getElementById("Img2")
+    let Img3 = document.getElementById("Img3")
+    let tar = document.getElementById("tabbar")
+    let txt1 = document.getElementById("txt1")
+    Img1.onclick = function () {
+      tar.style.background = "#fff";
+      txt1.style.color = "#FCB927";
+      txt2.style.color = "#9F9F9F";
+      txt3.style.color = "#9F9F9F";
+      Img1.src = "../img/tabbar/1.png"
+      Img2.src = "../img/tabbar/5.png"
+      Img3.src = "../img/tabbar/6.png"
+    }
+    Img2.onclick = function () {
+      tar.style.background = "#000";
+      txt1.style.color = "#9F9F9F";
+      txt2.style.color = "#fff";
+      txt3.style.color = "#9F9F9F";
+      Img1.src = "../img/tabbar/4.png"
+      Img2.src = "../img/tabbar/5.png"
+      Img3.src = "../img/tabbar/6.png"
+    }
+    Img3.onclick = function () {
+      tar.style.background = "#fff";
+      txt1.style.color = "#9F9F9F";
+      txt2.style.color = "#9F9F9F";
+      txt3.style.color = "#FCB927";
+      Img1.src = "../img/tabbar/4.png"
+      Img2.src = "../img/tabbar/5.png"
+      Img3.src = "../img/tabbar/3.png"
+    }
+  })()
+</script>
+
+</html>
